@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🚌 Intelligent Public Transportation Fleet Monitoring</h1>
+    <p>Real-Time Fleet Dashboard</p>
+</header>
+
+<main>
+    <section class="cards">
+        <div class="card">
+            <h3>Total Buses</h3>
+            <p id="totalBuses">25</p>
+        </div>
+
+        <div class="card">
+            <h3>Active Buses</h3>
+            <p id="activeBuses">20</p>
+        </div>
+
+        <div class="card">
+            <h3>Delayed Buses</h3>
+            <p id="delayedBuses">5</p>
+        </div>
+
+        <div class="card">
+            <h3>Average Fuel</h3>
+            <p id="fuel">65%</p>
+        </div>
+    </section>
+
+    <section class="table-section">
+        <h2>Fleet Status</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Bus ID</th>
+                    <th>Route</th>
+                    <th>Location</th>
+                    <th>Fuel</th>
+                    <th>Passengers</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="busTable">
+                <tr>
+                    <td>B101</td>
+                    <td>21G</td>
+                    <td>Chennai</td>
+                    <td>78%</td>
+                    <td>42</td>
+                    <td class="active">Active</td>
+                </tr>
+
+                <tr>
+                    <td>B102</td>
+                    <td>27B</td>
+                    <td>Tambaram</td>
+                    <td>54%</td>
+                    <td>35</td>
+                    <td class="active">Active</td>
+                </tr>
+
+                <tr>
+                    <td>B103</td>
+                    <td>70C</td>
+                    <td>Avadi</td>
+                    <td>31%</td>
+                    <td>48</td>
+                    <td class="delayed">Delayed</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>Fleet Monitoring System | Software Engineering CO3</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
